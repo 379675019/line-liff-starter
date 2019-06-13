@@ -15,15 +15,19 @@ function initializeApp(data) {
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         var url = 'http://wx-ai.topcodes.cn/api/line/add-device?userId=' + data.context.userId;
-        alert(url);
         liff.openWindow({
             url: url
         });
+        liff.closeWindow();
     });
 
     // closeWindow call
     document.getElementById('closewindowbutton').addEventListener('click', function () {
-        liff.closeWindow();
+        var url = 'http://wx-ai.topcodes.cn/api/line/device-list?userId=' + data.context.userId;
+        liff.openWindow({
+            url: url
+        });
+        // liff.closeWindow();
     });
 
     // sendMessages call
