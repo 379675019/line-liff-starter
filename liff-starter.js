@@ -14,10 +14,11 @@ function initializeApp(data) {
 
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
-        alert(data.context.userId);
-//         liff.openWindow({
-//             url: 'https://wx-ai.topcodes.cn/api/line/add-device'
-//         });
+        var url = 'http://wx-ai.topcodes.cn/api/line/add-device?userId=' + data.context.userId;
+        alert(url);
+        liff.openWindow({
+            url: url
+        });
     });
 
     // closeWindow call
