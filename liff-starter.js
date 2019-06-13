@@ -15,9 +15,9 @@ function initializeApp(data) {
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         alert(data.context.userId);
-        liff.openWindow({
-            url: 'https://wx-ai.topcodes.cn/api/line/add-device'
-        });
+//         liff.openWindow({
+//             url: 'https://wx-ai.topcodes.cn/api/line/add-device'
+//         });
     });
 
     // closeWindow call
