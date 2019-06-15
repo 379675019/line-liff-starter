@@ -1,6 +1,6 @@
 window.onload = function (e) {
     liff.init(function (data) {
-        var url = 'http://www.shikeiot.com/api/line/add-device?userId=' + data.context.userId;
+        var url = 'http://www.shikeiot.com/api/line/device-list?userId=' + data.context.userId;
         liff.openWindow({
             url: url
         });
