@@ -1,6 +1,10 @@
 window.onload = function (e) {
     liff.init(function (data) {
-        initializeApp(data);
+        var url = 'http://www.shikeiot.com/api/line/add-device?userId=' + data.context.userId;
+        liff.openWindow({
+            url: url
+        });
+        liff.closeWindow();
     });
 };
 
@@ -14,7 +18,7 @@ function initializeApp(data) {
 
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
-        var url = 'http://wx-ai.topcodes.cn/api/line/add-device?userId=' + data.context.userId;
+        var url = 'http://www.shikeiot.com/api/line/add-device?userId=' + data.context.userId;
         liff.openWindow({
             url: url
         });
