@@ -6,7 +6,7 @@ window.onload = function (e) {
             url: url
         });
         liff.closeWindow();
-        setTimeout("closeWindowMy()", 5000); 
+        setTimeout("closeWindowMy()", 3000); 
     });
 };
 
