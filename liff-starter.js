@@ -1,12 +1,12 @@
 window.onload = function (e) {
     liff.init(function (data) {
-        // alert(data.context.userId)
+        alert(data.context.userId)
         var url = 'http://3.16.164.193:9080/api/line/add-device?userId=' + data.context.userId;
         liff.openWindow({
             url: url
         });
-        
-        setTimeout("closeWindowMy()", 1500); 
+        liff.closeWindow();
+        // setTimeout("closeWindowMy()", 1500); 
     });
 };
 
