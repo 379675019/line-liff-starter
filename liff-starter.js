@@ -5,7 +5,6 @@ window.onload = function (e) {
         liff.openWindow({
             url: url
         });
-        liff.closeWindow();
         setTimeout("closeWindowMy()", 3000); 
     });
 };
